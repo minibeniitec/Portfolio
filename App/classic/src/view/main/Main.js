@@ -12,12 +12,11 @@ Ext.define('Portfolio.view.main.Main', {
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
         'Portfolio.view.main.MainController',
         'Portfolio.view.main.MainModel'
     ],
 
-    title: 'Ben Garza',
+    title: 'Benjamin Garza <div style="font-size: 12px; display: inline; opacity: 60%;"> Software Engineer</div>',
     iconCls: 'x-fa fa-user',
 
     controller: 'main',
@@ -29,12 +28,20 @@ Ext.define('Portfolio.view.main.Main', {
     tabRotation: 0,
 
     items: [{
-        title: 'About Me'
+        xtype: 'panel',
+        iconCls: 'x-fa fa-home',
+        tooltip: 'Home'
     }, {
-        title: 'Interests'
+        xtype: 'panel',
+        iconCls: 'x-fa fa-user',
+        tooltip: 'About'
     }, {
-        title: 'Sample Projects'
+        xtype: 'panel',
+        iconCls: 'x-fa fa-terminal',
+        tooltip: 'Projects'
     }, {
-        title: 'Resume'
+        xtype: 'panel',
+        iconCls: 'x-fa fa-envelope',
+        tooltip: 'Contact'
     }]
 });

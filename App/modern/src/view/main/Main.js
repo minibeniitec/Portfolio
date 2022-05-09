@@ -8,49 +8,29 @@ Ext.define('Portfolio.view.main.Main', {
     xtype: 'app-main',
 
     requires: [
-        'Ext.MessageBox',
-        'Ext.layout.Fit'
+        'Ext.MessageBox'
     ],
 
     controller: 'main',
     viewModel: 'main',
 
-    defaults: {
-        tab: {
-            iconAlign: 'top'
-        }
-    },
-
     tabBarPosition: 'bottom',
 
-    items: [
-        // TODO - Replace the content of this view to suit the needs of your application.
-        {
-            title: 'Home',
-            iconCls: 'x-fa fa-home',
-            layout: 'fit',
-            // The following grid shares a store with the classic version's grid as well!
-            items: [{
-                xtype: 'mainlist'
-            }]
-        },{
-            title: 'Users',
-            iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{loremIpsum}'
-            }
-        },{
-            title: 'Groups',
-            iconCls: 'x-fa fa-users',
-            bind: {
-                html: '{loremIpsum}'
-            }
-        },{
-            title: 'Settings',
-            iconCls: 'x-fa fa-cog',
-            bind: {
-                html: '{loremIpsum}'
-            }
-        }
-    ]
+    items: [{
+        xtype: 'panel',
+        iconCls: 'x-fa fa-home',
+        tooltip: 'Home'
+    }, {
+        xtype: 'panel',
+        iconCls: 'x-fa fa-user',
+        tooltip: 'About'
+    }, {
+        xtype: 'panel',
+        iconCls: 'x-fa fa-terminal',
+        tooltip: 'Projects'
+    }, {
+        xtype: 'panel',
+        iconCls: 'x-fa fa-envelope',
+        tooltip: 'Contact'
+    }]
 });
