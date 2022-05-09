@@ -543,6 +543,11 @@
         "(^|/)CVS(/?$|/.*?$)"
     ],
 
+    /*
+     * Solution for MacOS compiling
+     */
+    "bypass_lp": true,
+
     /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
