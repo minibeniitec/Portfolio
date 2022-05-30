@@ -17,7 +17,6 @@ Ext.define('Portfolio.view.main.Main', {
     ],
 
     title: 'Benjamin Garza <div style="font-size: 12px; display: inline; opacity: 60%;"> Software Engineer</div>',
-    iconCls: 'x-fa fa-user',
 
     controller: 'main',
     viewModel: 'main',
